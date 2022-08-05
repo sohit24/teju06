@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Teju</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(27, 31, 34, 0.85);
+            color: white;
+            height: 400%;
+
+        }
+
+        .image-2 {
+            display: block;
+            position: absolute;
+            left: 4%;
+            top: 6%;
+            width: 10%;
+        }
+
+        .image-3 {
+            display: block;
+            position: absolute;
+            left: 36%;
+            top: 53%;
+            width: 10%;
+        }
+
+        h1 {
+            font-family: 'Josefin Sans', sans-serif;
+            display: block;
+            position: absolute;
+            right: 25%;
+        }
+
+        p {
+            font-family: 'Josefin Sans', sans-serif;
+            display: block;
+            position: absolute;
+            right: 10%;
+            top: 15%;
+        }
+
+        .maindiv-1 img {
+            width: 20%;
+            position: absolute;
+            top: 7%;
+            /* background-image: url('https://scontent.cdninstagram.com/v/t1.15752-9/294917775_1087599112157990_3546587089663964793_n.jpg?stp=dst-jpg_s320x320&_nc_cat=105&ccb=1-7&_nc_sid=5a057b&_nc_ohc=XDwWI5-P2w8AX_4kvrY&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVIcleQlz3hrYj-Fej8K3azPT_s0IGl_n237DmNnLcUDNw&oe=6312B437'); */
+            box-shadow: 1px 2px 10px 5px white;
+            left: 15%;
+            animation: slider 9s infinite linear;
+        }
+
+        @keyframes slider {
+            0% {}
+
+            35% {
+                mask-image: url('https://scontent.cdninstagram.com/v/t1.15752-9/297094205_914087706650059_4534648224854696712_n.jpg?stp=dst-jpg_s320x320&_nc_cat=107&ccb=1-7&_nc_sid=5a057b&_nc_ohc=9Ckn38spCzsAX8oPpjf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVJJqQe--1dPK5d2Mutx9cGPi7jiTAgwdD6g2VNXck6BDQ&oe=630FFBC4');
+            }
+
+            70% {
+                mask-image: url('https://scontent.cdninstagram.com/v/t1.15752-9/296565647_8518777774815182_1573314340241005494_n.jpg?stp=dst-jpg_s320x320&_nc_cat=108&ccb=1-7&_nc_sid=5a057b&_nc_ohc=Qz4855CYEp8AX_s1jTf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVJa6CaB0k9fAeAchc-BWeeARhF9803S-dihwUvnIySH_A&oe=6312C3AD');
+            }
+        }
+
+        /* .intro,
+.intro a{
+  color:#fff;
+  font-family:
+} */
+        /* customizable snowflake styling */
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial;
+            text-shadow: 0 0 1px #000;
+        }
+
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @-webkit-keyframes snowflakes-shake {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+
+            100% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @keyframes snowflakes-shake {
+            0% {
+                transform: translateX(0px)
+            }
+
+            50% {
+                transform: translateX(80px)
+            }
+
+            100% {
+                transform: translateX(0px)
+            }
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+            -webkit-animation-duration: 10s, 3s;
+            -webkit-animation-timing-function: linear, ease-in-out;
+            -webkit-animation-iteration-count: infinite, infinite;
+            -webkit-animation-play-state: running, running;
+            animation-name: snowflakes-fall, snowflakes-shake;
+            animation-duration: 10s, 3s;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            animation-play-state: running, running
+        }
+
+        .snowflake:nth-of-type(0) {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+
+        .snowflake:nth-of-type(1) {
+            left: 10%;
+            -webkit-animation-delay: 1s, 1s;
+            animation-delay: 1s, 1s
+        }
+
+        .snowflake:nth-of-type(2) {
+            left: 20%;
+            -webkit-animation-delay: 6s, .5s;
+            animation-delay: 6s, .5s
+        }
+
+        .snowflake:nth-of-type(3) {
+            left: 30%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+
+        .snowflake:nth-of-type(4) {
+            left: 40%;
+            -webkit-animation-delay: 2s, 2s;
+            animation-delay: 2s, 2s
+        }
+
+        .snowflake:nth-of-type(5) {
+            left: 50%;
+            -webkit-animation-delay: 8s, 3s;
+            animation-delay: 8s, 3s
+        }
+
+        .snowflake:nth-of-type(6) {
+            left: 60%;
+            -webkit-animation-delay: 6s, 2s;
+            animation-delay: 6s, 2s
+        }
+
+        .snowflake:nth-of-type(7) {
+            left: 70%;
+            -webkit-animation-delay: 2.5s, 1s;
+            animation-delay: 2.5s, 1s
+        }
+
+        .snowflake:nth-of-type(8) {
+            left: 80%;
+            -webkit-animation-delay: 1s, 0s;
+            animation-delay: 1s, 0s
+        }
+
+        .snowflake:nth-of-type(9) {
+            left: 90%;
+            -webkit-animation-delay: 3s, 1.5s;
+            animation-delay: 3s, 1.5s
+        }
+
+        /* Demo Purpose Only*/
+        .demo {
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            display: block;
+            margin: 0 auto;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .demo a {
+            font-family: 'Raleway', sans-serif;
+            color: #000;
+        }
+
+        .wishes p {
+            display: block;
+            position: absolute;
+            right: 18%;
+            width: 36%;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .maindiv-2 img {
+            position: absolute;
+            display: block;
+            width: 20%;
+            right: 17%;
+            top: 109%;
+            box-shadow: 1px 2px 10px 5px white;
+        }
+
+        .maindiv-2 p {
+            font-family: 'Josefin Sans', sans-serif;
+            display: block;
+            position: absolute;
+            right: 55%;
+            top: 118%;
+            left: 10%;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .maindiv-3 img {
+            position: absolute;
+            display: block;
+            width: 20%;
+            left: 15%;
+            top: 236%;
+            box-shadow: 1px 2px 10px 5px white;
+        }
+
+        .final {
+            top: 420%;
+            position: absolute;
+            display: block;
+            left: 44%;
+            padding: 10px;
+        }
+
+        .maindiv-3 p {
+            font-family: 'Josefin Sans', sans-serif;
+            display: block;
+            position: absolute;
+            /* right: -14%; */
+            width: 35%;
+            top: 250%;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .maindiv-4 p {
+            font-family: 'Josefin Sans', sans-serif;
+            display: block;
+            position: absolute;
+            /* right: -14%; */
+            width: 35%;
+            top: 354%;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        .wishes p {
+            font-size: 1.5rem;
+            right: 8%;
+        }
+
+        .wishes h1 {
+            display: block;
+            position: absolute;
+            top: 13%;
+        }
+
+        .maindiv-4 img {
+            display: block;
+            position: absolute;
+            top: 332%;
+            left: 15%;
+            width: 20%;
+            box-shadow: 1px 2px 10px 5px white;
+        }
+
+        @media only screen and (max-width:1107px) {
+            .maindiv-1 img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                left: 7%;
+            }
+
+            h1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width:920px) {
+            .maindiv-1 img {
+                top: 20%;
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            .maindiv-1 img {
+                width: 30%;
+                top: 29%;
+            }
+
+            .maindiv-1 h1 {
+                left: 5%;
+            }
+        }
+
+        @media only screen and (max-width:420px) {
+            .maindiv-1 img {
+                position: absolute;
+                display: block;
+                top: 46%;
+                left: 12%;
+            }
+
+            .maindiv-1 h1 {
+                position: absolute;
+                display: block;
+                left: 22%;
+            }
+
+            .wishes h1 {
+                position: absolute;
+                display: block;
+                left: 20%;
+                top: 16%;
+            }
+
+            .wishes p {
+                position: absolute;
+                display: block;
+                top: 28%;
+            }
+
+            .maindiv-2 p {
+                font-size: 2rem;
+                width: 45%;
+                top: 99%;
+            }
+
+            .maindiv-2 img {
+                position: absolute;
+                display: block;
+                width: 34%;
+                left: 61%;
+                top: 126%;
+            }
+
+            .maindiv-3 img {
+                position: absolute;
+                display: block;
+                top: 236%;
+                width: 44%;
+                left: 5%;
+            }
+
+            .final {
+                width: 60%;
+                display: block;
+                top: 389%;
+                left: 21%;
+
+            }
+
+            .maindiv-4 p {
+                position: absolute;
+                display: block;
+                top: 339%;
+            }
+
+            .image-3 {
+                top: 6%;
+                position: absolute;
+                left: 84%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <p>Wish you a many more happy returns of the day</p> -->
+    <img class="image-2"
+        src=" https://scontent.cdninstagram.com/v/t1.15752-9/295488844_1209935889841001_8301754006360910916_n.jpg?stp=dst-jpg_s320x320&_nc_cat=111&ccb=1-7&_nc_sid=5a057b&_nc_ohc=CnyIiYkwtqUAX-fRDLj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVI7ppNoJPb4ZFO7fHXjY325IptA_1YsZ7QzZAV8-5ZiXw&oe=631169F6"
+        alt="">
+
+    <img class="image-3"
+        src="https://scontent.cdninstagram.com/v/t1.15752-9/297094205_914087706650059_4534648224854696712_n.jpg?stp=dst-jpg_s320x320&_nc_cat=107&ccb=1-7&_nc_sid=5a057b&_nc_ohc=9Ckn38spCzsAX8gSEeR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVKHhPGqddLTVZCqDiZkfU9wc2dggPFCtPHTqHSoFS65Tw&oe=6313F044"
+        alt="">
+    <div class="maindiv-1">
+        <h1>Happy Birthday Teju 🥰</h1>
+        <img src="https://scontent.cdninstagram.com/v/t1.15752-9/294917775_1087599112157990_3546587089663964793_n.jpg?stp=dst-jpg_s320x320&_nc_cat=105&ccb=1-7&_nc_sid=5a057b&_nc_ohc=XDwWI5-P2w8AX_4kvrY&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVIcleQlz3hrYj-Fej8K3azPT_s0IGl_n237DmNnLcUDNw&oe=6312B437"
+            alt="">
+        <!-- <embed src="Happy Days Movie Bgm.mp3" loop="true" autostart="true" width="2" height="0"> -->
+    </div>
+    <div class="maindiv-2">
+        <audio src="Happy Days Movie Bgm.mp3"></audio>
+        <img src="https://scontent.cdninstagram.com/v/t1.15752-9/295076828_381696450762349_908560550394303164_n.jpg?stp=dst-jpg_s320x320&_nc_cat=107&ccb=1-7&_nc_sid=5a057b&_nc_ohc=78-xzuCX2d0AX9YibY8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVLOouI1nCjko9wfKSwhv-8y_9JdWFpovWxobc0jUPoolw&oe=6312C1F0"
+            alt="">
+        <p>
+            I still look back to when I first met you in kindergarten. Nobody would have
+            thought that we will come this far, but now I know that we are friends for life and no matter what happens
+            in the future, we are always going to stick around.
+        </p>
+    </div>
+    <div class="maindiv-3">
+        <img src="https://scontent.cdninstagram.com/v/t1.15752-9/296565647_8518777774815182_1573314340241005494_n.jpg?stp=dst-jpg_s320x320&_nc_cat=108&ccb=1-7&_nc_sid=5a057b&_nc_ohc=Qz4855CYEp8AX_s1jTf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVJa6CaB0k9fAeAchc-BWeeARhF9803S-dihwUvnIySH_A&oe=6312C3AD"
+            alt="">
+        <p>
+            You are the strongest support in my life, and I am blessed to have a true friend like you who has always
+            stood by me through the most challenging times. I wish that all your dreams come true and
+            you are showered with happiness and success in life.
+        </p>
+    </div>
+    <div class="maindiv-4">
+        <img src="https://scontent.cdninstagram.com/v/t1.15752-9/296332343_587648519659943_6415549826388530754_n.jpg?stp=dst-jpg_s320x320&_nc_cat=111&ccb=1-7&_nc_sid=5a057b&_nc_ohc=yQR7WUe2sVAAX_KaVLf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AVImmrIyxZIKorVfi3q2tcNzAgFd_ayiQJz6GdEkvt4YTA&oe=63148B36"
+            alt="">
+        <p>
+            Hope you would never leave me..., Happy Birthday once again...
+
+            <br><br>
+            Lots of love
+        </p>
+
+    </div>
+    <div class="wishes">
+        <h1>Wishing you a happy birthday!</h1>
+        <p>
+            <br>
+            <br>
+            T - Talented
+            <br>
+            <br>
+            E - Excellent
+            <br>
+            <br>
+            J - Joyful
+            <br>
+            <br>
+            A - Ambitious
+            <br>
+            <br>
+            S - Spectacular
+            <br>
+            <br>
+            W - Wise
+            <br>
+            <br>
+            I - Intelligent
+            <br>
+            <br>
+            N - Natural
+            <br>
+            <br>
+            I - Inspiring
+            <br>
+            <br>
+        </p>
+    </div>
+
+    <div class="final">
+        Happy Birthday Teju With Love...
+    </div>
+
+    <div class="snowflakes" aria-hidden="true">
+        <!-- <div class="intro"> Find 250+ Ready to use demo at <a href="https://codeconvey.com">Codeconvey.com</a></div> -->
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
+
+</body>
+
+</html>
